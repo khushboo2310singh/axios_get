@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react'
+import "./App.css
 const App = () => {
     const[users, setusers]=useState([]);
     const handleclick=()=>{
@@ -18,7 +19,7 @@ const App = () => {
     <h2>Axios get method</h2>
     <input type="button" value="Click me" onClick={handleclick}/>
     {users.map((user)=>{return(
-        <div key={user.id}>
+        <div key={user.id} className="App">
             Name--{user.name}<br/>
             Age--{user.age}
         </div>
